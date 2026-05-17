@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossa História ✨</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="stars-canvas"></canvas>
+
+  <!-- ══════════════════════════════
+       TELA DE ENTRADA
+  ══════════════════════════════ -->
+  <div id="intro">
+    <h1>Para você ✨</h1>
+    <p>Cada música guarda um pedacinho de nós. Ouça com o coração.</p>
+    <button id="btn-start">Começar nossa história</button>
+  </div>
+
+  <!-- ══════════════════════════════
+       CONTEÚDO PRINCIPAL
+  ══════════════════════════════ -->
+  <main id="main-content" style="display:none;">
+
+    <header class="site-header" id="site-header">
+      <p class="subtitle">Nossa história</p>
+      <h1>Cada canção, um momento</h1>
+      <div class="divider"></div>
+      <p class="intro-text">Clique para ouvir cada música — uma surpresa te espera do outro lado ♡</p>
+    </header>
+
+
+    <!-- ════════════════════════════════
+         CAPÍTULO 1
+         🎵 data-url  → link do YouTube
+         🖼️ src       → caminho da foto
+         ✏️ <p>       → seu texto
+    ═════════════════════════════════ -->
+    <article class="chapter" data-chapter="1">
+      <p class="chapter-number">Capítulo I</p>
+      <h2 class="chapter-title">Uma amizade com história</h2>
+
+      <div class="card">
+
+        <div class="photo-slot">
+          <img src="amigos.jpeg" alt="Nossa memória" onerror="this.style.display='none'">
+          <div class="photo-placeholder">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            Coloque sua foto aqui
+          </div>
+        </div>
+
+        <div class="song-block">
+          <div class="song-meta">
+            <div class="song-icon">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm12-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              </svg>
+            </div>
+            <div class="song-info">
+              <div class="song-name">I wanna be your girlfriend</div>   <!-- ✏️ edite -->
+              <div class="song-artist">Girl in red</div>         <!-- ✏️ edite -->
+            </div>
+          </div>
+          <!-- 🎵 Cole o link do YouTube no href -->
+          <a class="btn-youtube" href="https://www.youtube.com/watch?v=SkHWPgZcSl0" target="_blank" rel="noopener">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.2 5 12 5 12 5s-4.2 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.2 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM10 15V9l5.5 3-5.5 3z"/>
+            </svg>
+            Ouvir no YouTube
+          </a>
+          <p class="listen-hint">♪ Clique para ouvir, depois volte para ver a surpresa ♪</p>
+        </div>
+
+        <div class="love-message">
+          <div class="love-message-inner">
+            <div class="unlocked-tag">
+              <svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              mensagem revelada
+            </div>
+            <p>
+              Lembra desse dia? eu já me encontrava apaixonado por você, a cada abraço ou momento do qual se tocavamos me trazia uma vontade interminável de te beijar e lhe dizer: Eu te amooo! Você nesse momento já era o meu sonho de criança. Deitar com você naquela cama elástica é um momento que nunca saiu da minha cabeça, desde esse dia, no meu coração e na minha cabeça você entrou e nunca mais saiu.
+            </p>
+            <p class="msg-signature">Com todo o meu amor ♡</p>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+
+    <!-- ════════════════════════════════
+         CAPÍTULO 2
+    ═════════════════════════════════ -->
+    <article class="chapter" data-chapter="2">
+      <p class="chapter-number">Capítulo II</p>
+      <h2 class="chapter-title">O nosso primeiro encontro</h2>
+
+      <div class="card">
+
+        <div class="photo-slot">
+          <img src="1_encontro.jpeg" alt="Nossa memória" onerror="this.style.display='none'">
+          <div class="photo-placeholder">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            Coloque sua foto aqui
+          </div>
+        </div>
+
+        <div class="song-block">
+          <div class="song-meta">
+            <div class="song-icon">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm12-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              </svg>
+            </div>
+            <div class="song-info">
+              <div class="song-name">Dreaming of you</div>
+              <div class="song-artist">Cigarretes after sex</div>
+            </div>
+          </div>
+          <a class="btn-youtube" href="https://www.youtube.com/watch?v=HZT1abuUObE" target="_blank" rel="noopener">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.2 5 12 5 12 5s-4.2 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.2 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM10 15V9l5.5 3-5.5 3z"/>
+            </svg>
+            Ouvir no YouTube
+          </a>
+          <p class="listen-hint">♪ Clique para ouvir e volte ver a surpresa ♪</p>
+        </div>
+
+        <div class="love-message">
+          <div class="love-message-inner">
+            <div class="unlocked-tag">
+              <svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              mensagem revelada
+            </div>
+            <p>
+              Nosso primeiro encontro tinha gosto de nervosismo misturado com alegria. Cheio do que se aprender ainda, de sentimento de descoberta, paixão intensa, histórias pra compartilhar. Lembro até hoje da sua blusa vermelha, do shorts jeans, do seu cheiro intenso e encantador. A partir desse dia tudo que eu mais queria já era ser um bom namorado para você mesmo errando as vezes.
+            </p>
+            <p class="msg-signature">Sempre seu ♡</p>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+
+    <!-- ════════════════════════════════
+         CAPÍTULO 3
+    ═════════════════════════════════ -->
+    <article class="chapter" data-chapter="3">
+      <p class="chapter-number">Capítulo III</p>
+      <h2 class="chapter-title">Momentos que guardo com carinho</h2>
+
+      <div class="card">
+
+        <div class="photo-slot">
+          <img src="skinCare.jpeg" alt="Nossa memória" onerror="this.style.display='none'">
+          <div class="photo-placeholder">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            Coloque sua foto aqui
+          </div>
+        </div>
+
+        <div class="song-block">
+          <div class="song-meta">
+            <div class="song-icon">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm12-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              </svg>
+            </div>
+            <div class="song-info">
+              <div class="song-name">Oração</div>
+              <div class="song-artist">A banda mais bonita da cidade</div>
+            </div>
+          </div>
+          <a class="btn-youtube" href="https://youtu.be/4DhNQWw877w?si=uWluv_f11aY9lxR1" target="_blank" rel="noopener">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.2 5 12 5 12 5s-4.2 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.2 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM10 15V9l5.5 3-5.5 3z"/>
+            </svg>
+            Ouvir no YouTube
+          </a>
+          <p class="listen-hint">♪ Clique para ouvir e volte ver a surpresa ♪</p>
+        </div>
+
+        <div class="love-message">
+          <div class="love-message-inner">
+            <div class="unlocked-tag">
+              <svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              mensagem revelada
+            </div>
+            <p>
+              Em dias como esse da skin care eu me lembro da alegria da vida e de estar ao seu lado, de ter um momento lento, divertido, sem cobranças, pura leveza. Dias como esse me lembram que a alegria pode estar na simplicidade.
+            </p>
+            <p class="msg-signature">Paz ao seu lado ♡</p>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+
+    <!-- ════════════════════════════════
+         CAPÍTULO 4
+    ═════════════════════════════════ -->
+    <article class="chapter" data-chapter="4">
+      <p class="chapter-number">Capítulo IV</p>
+      <h2 class="chapter-title">A viagem</h2>
+
+      <div class="card">
+
+        <div class="photo-slot">
+          <img src="despedida.jpeg" alt="Nossa memória" onerror="this.style.display='none'">
+          <div class="photo-placeholder">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            Coloque sua foto aqui
+          </div>
+        </div>
+
+        <div class="song-block">
+          <div class="song-meta">
+            <div class="song-icon">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm12-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              </svg>
+            </div>
+            <div class="song-info">
+              <div class="song-name">Photograph</div>
+              <div class="song-artist">Ed Sheeran</div>
+            </div>
+          </div>
+          <a class="btn-youtube" href="https://youtu.be/BGOkflruicw?si=4yYSrtPyAFOvVkQJ" target="_blank" rel="noopener">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.2 5 12 5 12 5s-4.2 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.2 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM10 15V9l5.5 3-5.5 3z"/>
+            </svg>
+            Ouvir no YouTube
+          </a>
+          <p class="listen-hint">♪ Clique para ouvir e volte ver a surpresa ♪</p>
+        </div>
+
+        <div class="love-message">
+          <div class="love-message-inner">
+            <div class="unlocked-tag">
+              <svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              mensagem revelada
+            </div>
+            <p>
+              Esse sim foi um dia de fortes emoções, mal haviamos firmado nossa relação e já tinhamos que encarar uma distâcia de 9500 km. Saudade é a palavra que mais define essa viagem, aprendemos na marra a amar a distância. Mas mesmo com tudo isso nós superamos esse desafio, nosso amor se permaneceu firme mesmo atrás de uma mera câmera.
+            </p>
+            <p class="msg-signature">Para sempre ♡</p>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+
+    <!-- ════════════════════════════════
+         CAPÍTULO 5
+    ═════════════════════════════════ -->
+    <article class="chapter" data-chapter="5">
+      <p class="chapter-number">Capítulo V</p>
+      <h2 class="chapter-title">1 ano de história</h2>
+
+      <div class="card">
+
+        <div class="photo-slot">
+          <img src="1_ano.jpeg" alt="Nossa memória" onerror="this.style.display='none'">
+          <div class="photo-placeholder">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            Coloque sua foto aqui
+          </div>
+        </div>
+
+        <div class="song-block">
+          <div class="song-meta">
+            <div class="song-icon">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm12-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              </svg>
+            </div>
+            <div class="song-info">
+              <div class="song-name">Partilhar</div>
+              <div class="song-artist">Rubel & Anavitória</div>
+            </div>
+          </div>
+          <a class="btn-youtube" href="https://youtu.be/aYccv3Wk50A?si=weyLkHHoMs-QsT__" target="_blank" rel="noopener">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.2 5 12 5 12 5s-4.2 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.2 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM10 15V9l5.5 3-5.5 3z"/>
+            </svg>
+            Ouvir no YouTube
+          </a>
+          <p class="listen-hint">♪ Clique para ouvir depois volte para a surpresa ♪</p>
+        </div>
+
+        <div class="love-message">
+          <div class="love-message-inner">
+            <div class="unlocked-tag">
+              <svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              mensagem revelada
+            </div>
+            <p>
+              Para mim o brilho que você emite supera todo o brilho daquela rua inteira facilmente. 365 dias se amando, passando por diversos perrengues, mas mesmo assim todo dia escolhendo um ao outro para se amar. Quero com você muitos anos ainda comemorar e se alegrar de tantas dificuldades superar, que seja sempre nós no plural, nós contra qualquer um, contra qualquer problema.
+            </p>
+            <p class="msg-signature">Eternamente seu amor ♡</p>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!--Capitulo 6-->
+    <article class="chapter" data-chapter="6">
+      <p class="chapter-number">Capítulo VI</p>
+      <h2 class="chapter-title">Hoje e sempre</h2>
+
+      <div class="card">
+
+        <div class="photo-slot">
+          <img src="quadros.jpeg" alt="Nossa memória" onerror="this.style.display='none'">
+          <div class="photo-placeholder">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <path d="M21 15l-5-5L5 21"/>
+            </svg>
+            Coloque sua foto aqui
+          </div>
+        </div>
+
+        <div class="song-block">
+          <div class="song-meta">
+            <div class="song-icon">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm12-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              </svg>
+            </div>
+            <div class="song-info">
+              <div class="song-name">Velha infância</div>
+              <div class="song-artist">Tribalistas</div>
+            </div>
+          </div>
+          <a class="btn-youtube" href="https://youtu.be/uJcnDgo5l10?si=pIAtp7sFiS1AmLvd" target="_blank" rel="noopener">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.2 5 12 5 12 5s-4.2 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.2 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM10 15V9l5.5 3-5.5 3z"/>
+            </svg>
+            Ouvir no YouTube
+          </a>
+          <p class="listen-hint">♪ Clique para ouvir e volte ver a surpresa ♪</p>
+        </div>
+
+        <div class="love-message">
+          <div class="love-message-inner">
+            <div class="unlocked-tag">
+              <svg width="10" height="10" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              mensagem final
+            </div>
+            <p>
+              Nesse dia tudo que eu mais queria era poder te fazer feliz novamente, poder ver aquele seu sorriso belo cheio de alegria e empolgação. Arte nunca foi meu maior interesse, mas ao seu lado mesmo o que não muito do meu interesse pode ficar mais divertido. Momentos como esse aquecem meu coração e me lembrar como no simples a alegria pode predominar. Obrigado por todos esses momentos minha Karoline Cavalcante Chagas!
+            </p>
+            <p class="msg-signature">Alegre em estar com você ♡</p>
+          </div>
+        </div>
+
+      </div>
+    </article>
+  </main>
+
+  <!-- botão para esconder todas as mensagens -->
+  <div class="reset-wrap">
+    <button id="btn-reset">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+        <path d="M3 3v5h5"/>
+      </svg>
+      Esconder todas as mensagens
+    </button>
+  </div>
+
+  <footer>
+    <span>♡</span> &nbsp;feito com amor, só para você &nbsp;<span>♡</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
